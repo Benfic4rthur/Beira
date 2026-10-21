@@ -4,9 +4,9 @@
 
 **Um app nativo para controlar o Mac pelas bordas do trackpad.**
 
-[Baixar para Apple Silicon](https://github.com/Benfic4rthur/beira/releases/latest/download/Beira-AppleSilicon.zip) · [Baixar para Intel](https://github.com/Benfic4rthur/beira/releases/latest/download/Beira-Intel.zip) · [Todas as versões](https://github.com/Benfic4rthur/beira/releases) · [Reportar um problema](https://github.com/Benfic4rthur/beira/issues)
+[Baixar para Apple Silicon](https://github.com/Benfic4rthur/Beira/releases/latest/download/Beira-AppleSilicon.zip) · [Baixar para Intel](https://github.com/Benfic4rthur/Beira/releases/latest/download/Beira-Intel.zip) · [Todas as versões](https://github.com/Benfic4rthur/Beira/releases) · [Reportar um problema](https://github.com/Benfic4rthur/Beira/issues)
 
-macOS 13 ou superior · Swift + AppKit + SwiftUI · Versão inicial 0.1.0
+macOS 13 ou superior · Swift + AppKit + SwiftUI · Versão 0.1.1
 
 </div>
 
@@ -29,8 +29,8 @@ O gesto precisa começar na borda e ter intenção vertical. Encostar sozinho n�
 
 | Seu Mac | Arquivo |
 | --- | --- |
-| **Apple Silicon** — MacBook Air, MacBook Pro e outros Macs com chip da família M | [**Beira para Apple Silicon · ZIP**](https://github.com/Benfic4rthur/beira/releases/latest/download/Beira-AppleSilicon.zip) |
-| **Intel** — MacBooks e outros Macs com processador Intel | [**Beira para Intel · ZIP**](https://github.com/Benfic4rthur/beira/releases/latest/download/Beira-Intel.zip) |
+| **Apple Silicon** — MacBook Air, MacBook Pro e outros Macs com chip da família M | [**Beira para Apple Silicon · ZIP**](https://github.com/Benfic4rthur/Beira/releases/latest/download/Beira-AppleSilicon.zip) |
+| **Intel** — MacBooks e outros Macs com processador Intel | [**Beira para Intel · ZIP**](https://github.com/Benfic4rthur/Beira/releases/latest/download/Beira-Intel.zip) |
 
 Para conferir seu processador: menu Apple → **Sobre Este Mac**. Se aparecer um chip da família M, escolha Apple Silicon; se aparecer Intel, escolha Intel.
 
@@ -69,7 +69,7 @@ O comando do Terminal libera a abertura do arquivo; a autorização nos Ajustes 
 
 Fechar a janela mantém o Beira em execução. Clique no ícone **[ ]** na barra de menus para abrir os ajustes, pausar ou encerrar o app.
 
-O Beira é gratuito para baixar e usar. Não há compra, assinatura ou conta para criar. Os downloads ficam nas [Releases do GitHub](https://github.com/Benfic4rthur/beira/releases).
+O Beira é gratuito para baixar e usar. Não há compra, assinatura ou conta para criar. Os downloads ficam nas [Releases do GitHub](https://github.com/Benfic4rthur/Beira/releases).
 
 ## Privacidade
 
@@ -77,7 +77,7 @@ O app funciona localmente. Não há conta, telemetria, chamadas de rede nem arma
 
 ## O que esta versão cobre
 
-A versão 0.1.0 é uma primeira versão para testes. O funcionamento inicial de brilho e volume foi confirmado pelo autor em um **MacBook Pro com Apple Silicon**. A calibração completa e os bloqueios de gesto também têm testes automatizados. A versão **Intel foi compilada separadamente**, mas ainda não foi testada em hardware Intel.
+A versão 0.1.1 padroniza o nome Beira na interface. O aplicativo segue em sua fase inicial de testes. O funcionamento inicial de brilho e volume foi confirmado pelo autor em um **MacBook Pro com Apple Silicon**. A calibração completa e os bloqueios de gesto também têm testes automatizados. A versão **Intel foi compilada separadamente**, mas ainda não foi testada em hardware Intel.
 
 O Beira envia eventos equivalentes às teclas de sistema. A resposta depende da tela e da saída de áudio que o macOS está usando. Dispositivos com volume fixo podem não responder; controle DDC de monitores externos não está incluído. A sensação háptica e o comportamento após suspensão devem ser verificados no dispositivo real.
 
@@ -98,7 +98,7 @@ A leitura dos contatos usa a API privada `MultitouchSupport`, isolada em um adap
 Requer Xcode com Swift 6 ou superior, SDK do macOS e ferramentas de linha de comando.
 
 ```sh
-git clone https://github.com/Benfic4rthur/beira.git
+git clone https://github.com/Benfic4rthur/Beira.git
 cd beira
 swift test
 ./scripts/run.sh

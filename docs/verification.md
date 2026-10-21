@@ -51,3 +51,7 @@ permissão concedida e testes simulados não são confirmação desse resultado.
 Nesta versão do macOS, o painel de privacidade aparece como **Controle do
 Dispositivo e Acesso a Dados**. Em versões anteriores ele é chamado de
 **Acessibilidade**; ambas as referências se relacionam ao acesso usado pelo Beira.
+
+## Versão 0.1.1
+
+O nome exibido no cabeçalho e no rodapé dos ajustes passa a ser **Beira**, com B maiúsculo. A atualização é visual; não altera o reconhecimento de gestos nem as permissões solicitadas. As compilações públicas continuam separadas para Apple Silicon e Intel, com assinatura ad hoc.

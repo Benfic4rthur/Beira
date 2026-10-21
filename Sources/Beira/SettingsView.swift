@@ -68,7 +68,7 @@ struct SettingsView: View {
                     }.font(.system(size: 12)).toggleStyle(.checkbox).tint(accent)
                 }.padding(22).background(.white.opacity(0.75), in: RoundedRectangle(cornerRadius: 20))
                 HStack {
-                    Text("BEIRA  /  0.1.0").font(.system(size: 10, weight: .medium, design: .monospaced)).tracking(1)
+                    Text("Beira  /  0.1.1").font(.system(size: 10, weight: .medium, design: .monospaced)).tracking(1)
                     Spacer()
                     Button("Reconectar trackpad") { state.reconnect() }.buttonStyle(.link)
                 }.font(.system(size: 11)).foregroundStyle(.secondary)
@@ -95,7 +95,7 @@ struct SettingsView: View {
                     }.frame(width: 24, height: 24)
                 }
                 VStack(alignment: .leading, spacing: 1) {
-                    Text("beira").font(.system(size: 32, weight: .semibold, design: .rounded)).tracking(-1)
+                    Text("Beira").font(.system(size: 32, weight: .semibold, design: .rounded)).tracking(-1)
                     Text("Na ponta dos dedos.").font(.system(size: 12)).foregroundStyle(.secondary)
                 }
             }

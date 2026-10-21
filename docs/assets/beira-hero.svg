@@ -5,7 +5,7 @@
 <rect width="1280" height="480" rx="28" fill="url(#bg)"/>
 <circle cx="1140" cy="50" r="240" fill="#f0cf8a" opacity=".04"/>
 <g fill="none" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M115 76h-16v65h16" stroke="#e69761"/><path d="M144 76h16v65h-16" stroke="#f5c66e"/></g>
-<text x="188" y="132" fill="#f5f0e5" font-size="68" font-weight="650" font-family="ui-rounded, system-ui, -apple-system, sans-serif" letter-spacing="-3">beira</text>
+<text x="188" y="132" fill="#f5f0e5" font-size="68" font-weight="650" font-family="ui-rounded, system-ui, -apple-system, sans-serif" letter-spacing="-3">Beira</text>
 <text x="92" y="222" fill="#f5f0e5" font-size="43" font-weight="600" font-family="system-ui, -apple-system, sans-serif">Brilho e volume.</text>
 <text x="92" y="277" fill="#f5f0e5" font-size="43" font-weight="600" font-family="system-ui, -apple-system, sans-serif">Na ponta dos dedos.</text>
 <text x="94" y="333" fill="#b6c4ba" font-size="20" font-family="system-ui, -apple-system, sans-serif">Deslize nas bordas do seu trackpad.</text>
