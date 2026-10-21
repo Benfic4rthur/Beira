@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+    <key>CFBundleName</key><string>Beira</string>
+    <key>CFBundleDisplayName</key><string>Beira</string>
+    <key>CFBundleIdentifier</key><string>com.arthurbenfica.beira</string>
+    <key>CFBundleExecutable</key><string>Beira</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>0.1.0</string>
+    <key>CFBundleVersion</key><string>1</string>
+    <key>CFBundleIconFile</key><string>Beira.icns</string>
+    <key>LSMinimumSystemVersion</key><string>13.0</string>
+    <key>LSUIElement</key><true/>
+    <key>NSHighResolutionCapable</key><true/>
+    <key>NSPrincipalClass</key><string>NSApplication</string>
+    <key>NSAccessibilityUsageDescription</key><string>O Beira precisa da sua permissão para ajustar brilho e volume com os gestos do trackpad.</string>
+    <key>NSHumanReadableCopyright</key><string>Copyright © 2026 Arthur Benfica.</string>
+</dict></plist>

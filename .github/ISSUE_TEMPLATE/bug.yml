@@ -1,0 +1,46 @@
+name: Reportar um problema
+description: Conte o que aconteceu com o Beira no seu Mac.
+title: "[Bug] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Versão do Beira
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: mac
+    attributes:
+      label: Modelo do Mac e processador
+      placeholder: "MacBook Pro · Apple Silicon / Intel"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: Versão do macOS
+    validations:
+      required: true
+  - type: dropdown
+    id: trackpad
+    attributes:
+      label: Trackpad
+      options:
+        - Integrado ao MacBook
+        - Magic Trackpad externo
+        - Outro
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: O que aconteceu e como reproduzir
+      description: Informe o gesto usado, o resultado esperado e o que aconteceu. Não inclua senhas nem informações privadas.
+    validations:
+      required: true
+  - type: textarea
+    id: settings
+    attributes:
+      label: Ajustes relevantes
+      description: Sensibilidade, largura das bordas, retorno tátil e se a permissão foi concedida.
