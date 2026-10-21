@@ -42,7 +42,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         menuIcon.accessibilityDescription = "Beira"
         statusItem.button?.image = menuIcon
         statusItem.button?.toolTip = "Beira — brilho e volume nas bordas"
-        state.onStatusChange = { [weak self] in self?.updateMenu() }
+        state.onStatusChange = { [weak self] in
+            self?.updateMenu()
+            DispatchQueue.main.async { self?.fitSettingsWindow() }
+        }
         let appMenu = NSMenu()
         let root = NSMenuItem(); root.submenu = NSMenu()
         root.submenu?.addItem(withTitle: "Ajustes do Beira…", action: #selector(showSettings), keyEquivalent: ",").target = self
@@ -79,18 +82,27 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
     @objc func showSettings() {
         if window == nil {
-            let window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 800, height: 720),
-                styleMask: [.titled, .closable, .miniaturizable, .resizable], backing: .buffered, defer: false)
+            let window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 820, height: 780),
+                styleMask: [.titled, .closable, .miniaturizable], backing: .buffered, defer: false)
             window.title = "Beira"
             window.titlebarAppearsTransparent = true
             window.isReleasedWhenClosed = false
             window.contentView = NSHostingView(rootView: SettingsView(state: state))
-            window.minSize = NSSize(width: 780, height: 660)
-            window.center()
             self.window = window
+            fitSettingsWindow()
+            window.center()
         }
+        fitSettingsWindow()
         window?.makeKeyAndOrderFront(nil)
         NSApp.activate(ignoringOtherApps: true)
+    }
+
+    private func fitSettingsWindow() {
+        guard let window, let content = window.contentView else { return }
+        content.layoutSubtreeIfNeeded()
+        let size = content.fittingSize
+        guard size.width > 0, size.height > 0 else { return }
+        window.setContentSize(size)
     }
 
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool { false }

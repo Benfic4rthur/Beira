@@ -8,9 +8,12 @@ private let paper = Color(red: 0.97, green: 0.96, blue: 0.93)
 struct SettingsView: View {
     @ObservedObject var state: AppState
 
+    private var appVersion: String {
+        Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "—"
+    }
+
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 24) {
+            VStack(alignment: .leading, spacing: 20) {
                 header
                 if !state.permissionGranted { permissionCard }
                 if let error = state.error { errorCard(error) }
@@ -68,14 +71,14 @@ struct SettingsView: View {
                     }.font(.system(size: 12)).toggleStyle(.checkbox).tint(accent)
                 }.padding(22).background(.white.opacity(0.75), in: RoundedRectangle(cornerRadius: 20))
                 HStack {
-                    Text("Beira  /  0.1.1").font(.system(size: 10, weight: .medium, design: .monospaced)).tracking(1)
+                    Text("Beira  /  \(appVersion)").font(.system(size: 10, weight: .medium, design: .monospaced)).tracking(1)
                     Spacer()
                     Button("Reconectar trackpad") { state.reconnect() }.buttonStyle(.link)
                 }.font(.system(size: 11)).foregroundStyle(.secondary)
-            }.padding(30)
-        }
+            }.padding(26)
+        .fixedSize(horizontal: false, vertical: true)
         .background(paper).foregroundStyle(ink)
-        .frame(minWidth: 760, idealWidth: 800, minHeight: 640, idealHeight: 720)
+        .frame(width: 820)
         .preferredColorScheme(.light)
         .alert("Início automático", isPresented: Binding(get: { state.loginError != nil }, set: { if !$0 { state.loginError = nil } })) {
             Button("OK") { state.loginError = nil }

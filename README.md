@@ -6,7 +6,7 @@
 
 [Baixar para Apple Silicon](https://github.com/Benfic4rthur/Beira/releases/latest/download/Beira-AppleSilicon.zip) · [Baixar para Intel](https://github.com/Benfic4rthur/Beira/releases/latest/download/Beira-Intel.zip) · [Todas as versões](https://github.com/Benfic4rthur/Beira/releases) · [Reportar um problema](https://github.com/Benfic4rthur/Beira/issues)
 
-macOS 13 ou superior · Swift + AppKit + SwiftUI · Versão 0.1.1
+macOS 13 ou superior · Swift + AppKit + SwiftUI · Versão 0.1.2
 
 </div>
 
@@ -77,7 +77,7 @@ O app funciona localmente. Não há conta, telemetria, chamadas de rede nem arma
 
 ## O que esta versão cobre
 
-A versão 0.1.1 padroniza o nome Beira na interface. O aplicativo segue em sua fase inicial de testes. O funcionamento inicial de brilho e volume foi confirmado pelo autor em um **MacBook Pro com Apple Silicon**. A calibração completa e os bloqueios de gesto também têm testes automatizados. A versão **Intel foi compilada separadamente**, mas ainda não foi testada em hardware Intel.
+A versão 0.1.2 mostra todos os ajustes em uma janela dimensionada pelo conteúdo, sem barra de rolagem. O aplicativo segue em sua fase inicial de testes. O funcionamento inicial de brilho e volume foi confirmado pelo autor em um **MacBook Pro com Apple Silicon**. A calibração completa e os bloqueios de gesto também têm testes automatizados. A versão **Intel foi compilada separadamente**, mas ainda não foi testada em hardware Intel.
 
 O Beira envia eventos equivalentes às teclas de sistema. A resposta depende da tela e da saída de áudio que o macOS está usando. Dispositivos com volume fixo podem não responder; controle DDC de monitores externos não está incluído. A sensação háptica e o comportamento após suspensão devem ser verificados no dispositivo real.
 

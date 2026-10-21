@@ -55,3 +55,9 @@ Dispositivo e Acesso a Dados**. Em versões anteriores ele é chamado de
 ## Versão 0.1.1
 
 O nome exibido no cabeçalho e no rodapé dos ajustes passa a ser **Beira**, com B maiúsculo. A atualização é visual; não altera o reconhecimento de gestos nem as permissões solicitadas. As compilações públicas continuam separadas para Apple Silicon e Intel, com assinatura ad hoc.
+
+## Versão 0.1.2
+
+A janela de ajustes usa o tamanho natural do conteúdo e não contém `ScrollView`. Ao mudar o status, o tamanho é recalculado para incluir os avisos de permissão ou erro. A versão exibida no rodapé vem do pacote instalado. Não houve alteração no reconhecedor nem nas permissões solicitadas.
+
+A cópia empacotada foi instalada e aberta neste Mac. A árvore de acessibilidade confirmou todos os controles e o rodapé 0.1.2, sem área nem barra de rolagem. A captura da janela confirmou que o conteúdo inteiro está visível. Os 14 testes passaram. Essa inspeção valida a interface; não é uma nova verificação física dos gestos.
